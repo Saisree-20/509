@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Registration</title>
+<style>
+  body{font-family:Arial,sans-serif;background:#f0f2f5;display:flex;justify-content:center;align-items:center;height:100vh;margin:0}
+  .form-box{background:#fff;padding:20px;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.1);width:100%;max-width:350px}
+  h2{text-align:center;margin-bottom:15px;color:#333}
+  label{display:block;margin:10px 0 5px;color:#555;font-size:14px}
+  input{width:100%;padding:10px;border:1px solid #ccc;border-radius:5px;font-size:14px}
+  input:focus{border-color:#4a69bd;outline:none}
+  button{width:100%;padding:10px;margin-top:15px;background:#4a69bd;color:#fff;border:none;border-radius:5px;font-weight:bold;cursor:pointer}
+  button:hover{background:#3b55a0}
+  .link{text-align:center;margin-top:10px;font-size:13px}
+  .link a{color:#4a69bd;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="form-box">
+  <h2>Register</h2>
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Register</button>
+  </form>
+  <div class="link">Already have an account? <a href="#">Login</a></div>
+</div>
+</body>
+</html>
